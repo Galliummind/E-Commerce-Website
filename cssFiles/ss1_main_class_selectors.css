@@ -1,0 +1,213 @@
+/*This is a selector will target the tag Body and HTML. Essentially it will set the height of the webpage to whatever the browser size is. This works on tablets
+and phones. credit to this design goes to https://stackoverflow.com/questions/13327532/body-height-not-filling-100-page-height as before I had an issue where the body 
+would NOT span the entire page or HTML section. The solution on stackoverflow did not work for me until I realized I was placing my background image class selector within a <dev>
+element within the body!. Once I removed that class selector from the dev and moved it to body the image problem was fixed!*/
+
+html,
+body {
+	/* Sizing */
+	margin: 0;
+	height: 100%;
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+/*when a mouse goes overe the link it will expand to a larger size, but will stay black
+credit goes to https://www.webdesignerdepot.com/2014/06/how-to-get-started-with-layer-fonts-in-css/
+for teaching me about element selectors. 
+I have sinced removed that for a simpler, more reliable method of visually changing the hover button.*/
+
+a:hover {
+	opacity: 0.4;
+}
+a:active {
+	/*Background settings*/
+	background-color: rgba(108, 154, 219, 0.6);
+}
+/* This class selector was a global selector for all unordered lists. It functioned excellent on all websites, but I try to avoid 
+global selectors unless it is a specific case that I know will never be changed. Using class selectors also helps me identify issues when troubleshooting as 
+i can see in a dev element exactly how much that class selector is affecting. */
+
+.main_menu_unordered_list {
+	margin: 0%;
+}
+/*Credit for background style such as inset and border spacing go to https://www.w3schools.com/css/tryit.asp?filename=trycss_border-style*/
+
+.borderbackground {
+	/* background aesthetics */
+	background-color: rgb(255, 255, 255, 0.9);
+	padding: 5px;
+	/*border physcial attributes*/
+	border-spacing: 1px;
+	border-radius: 6px;
+	border-style: none;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	max-width: 96%;
+}
+/*Credit for background style such as inset and border spacing go to https://www.w3schools.com/css/tryit.asp?filename=trycss_border-style*/
+
+.backgroundWrap {
+	background-color: rgb(255, 255, 255, 0.9);
+
+	width: fit-content;
+
+	padding: 15px;
+	/*border physcial attributes*/
+	border-spacing: 1px;
+	border-radius: 4px;
+	border-style: inset;
+	display: inline-block;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+/* Credit to this text goes to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text
+Essentially I am making the position on the image absolute while using some X,Y, and Z axis to position the text.
+In this case transform acts as the third axis and positions the text based on the corners of the image. by using three axis we
+can be certain our picture is centered.  */
+
+.centerOnPic {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*This is the header CSS class selector. the titlePageHeader will be used to style the header of each page.*/
+
+.titlePageHeader {
+	/* Credit for this background:
+        Author: Chris Coyier 
+        website: https://css-tricks.com/oprah-burst-title-thing/
+        Date: Jan 19, 2012 */
+	/* very far background color is controlled using linear-gradient function. This creates an image that transitions multiple 
+        colours (at least two) along a straight line. By default the transition happens from top to bottom. But by adding (to right) we
+        can directect the transition. We can also accomplish these directions by adding degrees.*/
+	/* For more details I found a great website that explains the function https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()  */
+	background: linear-gradient(135deg, rgba(12, 60, 122, 0.7), rgba(108, 154, 219, 0.6), rgba(12, 60, 122, 0.7));
+}
+.messercomputerheader {
+	font-size: 40px;
+	text-transform: uppercase;
+	padding: 15px;
+	letter-spacing: 22px;
+	color: white;
+	/* Top, Right, Bottom Left */
+	border-style: solid hidden solid hidden;
+	display: inline-block;
+}
+/*This CSS class selector .menu will be used to style the menu section. 
+The intent of this menu is to have the text align to the center and to have minimal padding.*/
+
+.menu {
+	/*Background settings*/
+	background-color: rgba(108, 154, 219, 0.6);
+	/*Text settings*/
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-size: 130%;
+	width: 100%;
+}
+/*This CSS class selector will determine how an <a> tag link and visited link will react.
+in this case I only want the link to show as black.
+all elements of <a> will be affected */
+
+.link-template {
+	color: white;
+	padding: 10px 10px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 10px;
+	/*Text-decorations will remove the underline under links*/
+	text-decoration: none;
+}
+.currentLink {
+	background-color: rgba(0, 0, 0, 0.568);
+}
+/*class selector .listitem will */
+
+.listItem li {
+	display: inline-block;
+	padding: 0px;
+}
+/*Credit to this paragraph template largely goes to W3Schools.com*/
+
+.footertemplate {
+	/*background position*/
+	position: relative;
+	/*font setting*/
+	padding: 1px;
+	text-align: center;
+	/* background aesthetics */
+	background-color: rgb(255, 255, 255);
+}
+/* fontFamily specifies which font to use on all pages. It must be used in a div tag after the first <body> element.
+I will be adding two other font-families in case the last one (Lucida Sans) does not work on a browser
+Credit goes to w3schools.com/css/css_font_websafe.asp*/
+
+.fontFamily {
+	font-family: Verdana, Georgia, 'Times New Roman', Times, serif, Tahoma, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Georgia,
+		'Times New Roman', Times, serif, Verdana, sans-serif;
+}
+/*This class selector will control the logo image for each page.
+I used stack overflow to help me troubleshoot why my logo was not working. 
+https://stackoverflow.com/questions/11701311/logo-image-and-h1-heading-on-the-same-line
+using this website I realized I needed to add img to my class selector to help define it.
+
+I actually needed to wipe the whole class selector and start over as the img tag actually put each picture 
+on the webpage in the same location. An element selector.*/
+
+.robot-logo {
+	/*Image postion*/
+	float: left;
+	padding-top: 30px;
+}
+.RobotLogoBottom {
+	/*Image postion*/
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.captionPosition {
+	/* Text Settings */
+	position: absolute;
+	width: 100%;
+	top: 25%;
+	left: 50%;
+	/* translate repositions an element based on horizontal and/or vertical directions 
+    Credit goes to https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate()*/
+	transform: translate(-50%, -50%);
+	color: rgb(73, 73, 73);
+	/* Font Setting*/
+	font-size: 200%;
+	/* Background Settings */
+	background-color: rgb(255, 255, 255);
+	width: fit-content;
+	/* Border Settings  */
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/*  */
+.label_format {
+	display: inline-block;
+	width: 100%;
+	text-align: left !important;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+	.hideOnMobile {
+		display: none;
+	} /* hide it elsewhere */
+}

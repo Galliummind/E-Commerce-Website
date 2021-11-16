@@ -1,0 +1,70 @@
+/*Credit for background style such as inset and border spacing go to https://www.w3schools.com/css/tryit.asp?filename=trycss_border-style*/
+
+.borderbackgroundShoppingSimplified {
+	/* background aesthetics */
+	background-color: rgb(255, 255, 255, 0.1);
+	padding: 5px;
+	/*border physcial attributes*/
+	border-spacing: 1px;
+	border-radius: 6px;
+	border-style: none;
+	margin: auto;
+}
+
+.product-background-template {
+	background-color: rgb(255, 255, 255, 0.9);
+	/*border physcial attributes*/
+	border-style: solid;
+	margin: auto;
+	max-width: 95%;
+}
+
+/* This class selector is needed to override the display of the links. The class selector is used in shop.html and simpleShopping.html */
+.links-override-important {
+	/* Font Settings */
+	color: black !important;
+	text-decoration: none !important;
+	text-align: center;
+	/*Background settings*/
+	background-color: rgba(108, 154, 219, 0.6);
+	margin: 1px;
+	padding: 10px;
+	/* Border settings */
+	border-radius: 10px;
+	/*Text-decorations will remove the underline under links*/
+	text-decoration: none;
+}
+
+/* The image template will be used for all images in the shop.html page and simpleshopping.html */
+.image-template {
+	/* Position Settings */
+	width: 20%;
+	height: auto;
+	display: inline-block;
+}
+
+.price {
+	color: grey;
+	font-size: 150%;
+	padding: 0px;
+}
+.product-background-template button {
+	/* Font Settings */
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	/*Background settings*/
+	background-color: rgba(108, 154, 219, 0.6);
+	margin: 0px;
+	padding: 10px;
+	/* Border settings */
+	/*Text-decorations will remove the underline under links*/
+	text-decoration: none;
+	cursor: pointer;
+	border: none;
+	width: 100%;
+}
+
+.disclaimer-please-note {
+	font-size: 75%;
+}

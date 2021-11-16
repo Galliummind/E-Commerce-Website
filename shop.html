@@ -1,0 +1,591 @@
+<!-- Note: There is a function (Add to cart) that has been commented out. Because it would require a lot of additional time to properly add this feature, I have decided
+to leave it out of the code for now. It does work as a button, but an item isn't added to any type of cart yet. I really just wanted to try the feature. -->
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="This website sells refurbished computers" name="description" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+		<title>Shop by Specifications</title>
+		<link href="./cssFiles/ss1_main_class_selectors.css" rel="stylesheet" />
+		<link href="./cssFiles/parallax-effect.css" rel="stylesheet" />
+		<link href="./cssFiles/simpleshoppingtemplate.css" rel="stylesheet" />
+		<link href="./cssFiles/shoppingCart.css" rel="stylesheet" />
+		<!-- Add open source icon library learned about this from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+		<!-- All import class selectors for social media buttons  -->
+		<link href="./cssFiles/social-media-buttons.css" rel="stylesheet" />
+		<!-- Import Font Awesome import -->
+		<script src="https://kit.fontawesome.com/dbedc92bd4.js" crossorigin="anonymous"></script>
+		<script src="./JavaScriptFiles/cartButton.js"></script>
+		<script src="./JavaScriptFiles/jquery-3.6.0.js"></script>
+
+		<!-- Cut and pasted from https://docs.minionmade.com/developer-tools/show-hide-specific-content-on-mobile-devices -->
+		<style type="text/css">
+			/* Smartphone Portrait and Landscape */
+			@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+				.mobileHide {
+					display: none;
+				}
+			}
+		</style>
+		<script>
+			// This jquery will fire when a user clicks on the button with the class .showHidePDF. When the event is activated, the selector "embed"
+			// will be toggled from on to off.
+			// https://www.w3schools.com/jquery/jquery_events.asp
+
+			// The first line of code :
+			// $(document).ready(function(){
+			// This line of code  will simply get the function ready once the DOM is ready to run Javascript code. The JQuery function will detect when the DOM is ready.
+
+			// This next line of code will target the class selector .showHidePDF and wait for a click to be detected. The user clicks the button
+			//with the class selector .showHidePDF a final line of code will run.
+			//   $(".showHidePDF").click(function(){
+
+			// This line of code will “toggle” on or off any embed elements. The toggle() function is a blackbox function that will show() or hide() the
+			//selected elements. The show() and Hide() function will first check to see if the selec-tor is hidden or visible, whichever
+			//state the selector is in the function will switch to the other. This creates the toggle effect.
+			// $("embed").toggle();
+
+			$(document).ready(function () {
+				$('.showHidePDF').click(function () {
+					$('embed').toggle();
+				});
+			});
+		</script>
+	</head>
+
+	<body class="fontFamily">
+		<div class="titlePageHeader">
+			<!-- Top left RobotLogo. This div is controlled by the RobotLogo Class. The logo is also a link to the homepage "./index.html" -->
+
+			<div class="robot-logo">
+				<a href="./index.html"
+					><img alt="RobotLogo" height="auto" src="./Images/LogoMakr-5OZUCD.png" width="100px"
+				/></a>
+			</div>
+
+			<h2 class="messercomputerheader">Messer Computers</h2>
+			<!-- Add font awesome icons -->
+			<a class="fa fa-facebook" href="https://www.facebook.com/"></a>
+			<a class="fa fa-twitter" href="https://twitter.com/"></a>
+			<a class="fa fa-youtube" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
+			<a class="fa fa-instagram" href="https://www.instagram.com/"></a>
+			<a class="fa fa-reddit" href="https://www.reddit.com/"></a>
+			<a class="fa fa-cart_Icon fa-cart-plus" href="./shoppingCart.html"></a>
+		</div>
+		<!-- Menu Header -->
+
+		<div class="menu">
+			<div class="listItem">
+				<ul class="main_menu_unordered_list">
+					<li>
+						<a class="link-template" href="./index.html">Home Page</a>
+					</li>
+
+					<!-- NOTE CURRENT LINK CLASS -->
+					<li>
+						<a class="link-template currentLink" href="./shop.html">Shop</a>
+					</li>
+
+					<li>
+						<a class="link-template" href="./simpleshopping.html">Simple Shopping</a>
+					</li>
+
+					<li>
+						<a class="link-template" href="./warranty.html">Warranty / Customer Service</a>
+					</li>
+
+					<li>
+						<a class="link-template" href="./aboutUs.html">About Us</a>
+					</li>
+
+					<li>
+						<a class="link-template" href="./ShoppingCart.html">Shopping Cart</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="backgroundpic2">
+			<div class="borderbackground centerOnPic">
+				<div class="backgroundWrap">
+					<div>
+						<a href="./shop.html"
+							><img alt="RobotLogo" height="auto" src="./Images/LogoMakr-5OZUCD.png" width="100px"
+						/></a>
+					</div>
+
+					<h2>Tips</h2>
+
+					<p>Too much information? Try our simple shopping page</p>
+					<a class="links-override-important" href="./simpleshopping.html">Simple Shopping</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- This is a template that will be used to fill in new product. DO NOT REMOVE.
+                Instructions: CTRL+C > CTRL+V in desired location. 
+                REMOVE COMMENTS BY PRESSING deleting <==-->
+		<!--
+                
+                            
+                <div class ="product-background-template">                 
+                    
+                    <h2>Header</h2>
+                     <img  class="image-template" alt="Dell Optiplex 3020" src="./Images/Dell Optiplex 3020.jpg" >
+                    <h3>Features</h3>
+            
+                    <p class="price">$200</p>
+            
+                    <h3>Manufacturers website</h3>
+                    <a class="links-override-important" href="https://www.dell.com/en-ca/shop/desktops/xps-desktop/spd/xps-8940-desktop">Dell XPS 8940</a>
+            
+
+                    <p>Please note we take information directly from the manufacturer's website</p>
+                </div>
+                </div>
+            
+            -->
+
+		<div class="product-background-template">
+			<h2>Dell Optiplex 7020 Desktop Computer</h2>
+			<img alt="Dell Optiplex 7020" class="image-template" src="./Images/Dell%20Optiplex%207020.jpg" />
+
+			<h3>Features</h3>
+
+			<div>
+				<p>
+					Processor: Intel i5 Quad Core Gen 4 3.20 GHz Processor Installed Memory: 8GB DDR3 Hard Drive: 500GB
+					Hard Disk Drive (HDD) SATA Operating System: Windows 10 Home 64bit
+				</p>
+				<!-- Service tag will give all exact details. Service Tag: 84CV322  -->
+
+				<!-- The following internal class will remove the PDF on mobile devices -->
+				<div class="mobileHide">
+					<embed
+						class="hideOnMobile"
+						height="1100px"
+						src="./PDF/Dell-OptiPlex-7020-Technical-Spec-Sheet-FINAL.pdf"
+						width="100%"
+					/>
+				</div>
+
+				<h3>Manufacturers website</h3>
+				<a
+					class="links-override-important"
+					href="https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7020-desktop/spd/optiplex-7020-desktop"
+					>Dell 7020</a
+				>
+
+				<p class="price">$200</p>
+				<button onclick="addToCartClick(1)" class="cart_button" type="button">ADD TO CART</button>
+				<!-- <p><button>Add to Cart</button></p> -->
+
+				<p class="disclaimer-please-note">
+					Please note we take information directly from the manufacturer's website
+				</p>
+			</div>
+		</div>
+
+		<div class="product-background-template">
+			<h2>Dell Optiplex 3020 Desktop Computer</h2>
+			<img alt="Dell Optiplex 3020" class="image-template" src="./Images/Dell%20Optiplex%203020.jpg" />
+
+			<h3>Features</h3>
+
+			<p>
+				Intel Core i5 4th Gen 4570 (3.20 GHz) 8 GB DDR3 1 TB SSD Windows 10 Pro No Screen Intel HD Graphics 4600
+			</p>
+			<!-- The following internal class will remove the PDF on mobile devices -->
+			<div class="mobileHide">
+				<<embed
+					class="hideOnMobile"
+					height="1100px"
+					src="./PDF/CSG-EN-XX-ALL-Optiplex-3020-Spec-Sheet.pdf"
+					width="100%"
+				/>
+			</div>
+
+			<p class="price">$300</p>
+			<button onclick="addToCartClick(2)" class="cart_button" type="button">ADD TO CART</button>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<h3>Manufacturers website</h3>
+			<a class="links-override-important" href="https://www.dell.com/lt/business/p/optiplex-3020-desktop/pd"
+				>Dell 3020</a
+			>
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>DELL 9020 Desktop Computer</h2>
+			<img alt="Dell 9020 Pic" class="image-template" src="./Images/Dell%20Optiplex%209020.jpg" />
+
+			<h3>Features</h3>
+
+			<p>
+				Processor: Intel i5 Quad Core Gen 4 3.20 GHz Processor Installed Memory: 8GB DDR3 Hard Drive: 240GB SSD
+				Operating System: Windows 10 Professional 64 bit Warranty: 30 Days, No Hassle Money Back Guarantee
+			</p>
+
+			<!-- The following internal class will remove the PDF on mobile devices -->
+			<div class="mobileHide">
+				<<embed
+					class="hideOnMobile"
+					height="1100px"
+					src="./PDF/Dell-OptiPlex-9020-spec-sheet_Final_V2_G13001038.pdf"
+					width="100%"
+				/>
+			</div>
+
+			<p class="price">$500</p>
+			<button onclick="addToCartClick(3)" class="cart_button" type="button">ADD TO CART</button>
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.dell.com/en-us/work/shop/cty/pdp/spd/optiplex-9020-desktop?sc_err=notincat"
+				>Dell 9020</a
+			>
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>DELL XPS 8940 Desktop Computer</h2>
+			<img alt="Dell XPS 8940" class="image-template" src="./Images/DellXPS8940.jpg" />
+
+			<h3>Features</h3>
+
+			<p>
+				Dell XPS 8940 Desktop Intel Core i5 10th Gen i5-10400 Six-Core Processor 2.9GHz (4.3GHz With Turbo
+				Boost) 1TB HDD Hard Drive & 16GB RAM Memory integrated graphics chip Wireless Wifi & Bluetooth, DVD
+				Drive, Keyboard and mouse Warranty: 30 Days, No Hassle Money Back Guarantee
+			</p>
+			<!-- The following internal class will remove the PDF on mobile devices -->
+			<div class="mobileHide">
+				<<embed
+					class="hideOnMobile"
+					height="1100px"
+					src="./PDF/XPS%208940%20Setup%20and%20Specifications.pdf"
+					width="100%"
+				/>
+			</div>
+
+			<p class="price">$900</p>
+			<button onclick="addToCartClick(4)" class="cart_button" type="button">ADD TO CART</button>
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.dell.com/en-ca/shop/desktops/xps-desktop/spd/xps-8940-desktop"
+				>Dell XPS 8940</a
+			>
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>Dell Precision 3630 Tower Desktop</h2>
+			<img
+				alt="Dell Precision 3630"
+				class="image-template"
+				src="./Images/Dell%20Precision%203630%20Tower%20Desktop.jpg"
+			/>
+
+			<h3>Features</h3>
+
+			<p>Intel Core i5-8500 6-Core Processor 3.00GHz 8 GB RAM 1 TB HDD Windows 10 PRO</p>
+			<!-- The following internal class will remove the PDF on mobile devices -->
+			<div class="mobileHide">
+				<<embed
+					class="hideOnMobile"
+					height="1100px"
+					src="./PDF/652_precision_3630_spec_sheet.pdf"
+					width="100%"
+				/>
+			</div>
+
+			<p class="price">$3,000</p>
+			<button onclick="addToCartClick(10)" class="cart_button" type="button">ADD TO CART</button>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.dell.com/en-ca/work/shop/dell-desktops-workstations/precision-3630-tower/spd/precision-3630-workstation"
+				>Dell Precision 3630</a
+			>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+		<!-- This class backgroundpic"x" will be used to make the parralax effect. -->
+
+		<div class="backgroundpic1">
+			<div class="borderbackground centerOnPic">
+				<div class="backgroundWrap">
+					<div>
+						<a href="./warranty.html"
+							><img alt="RobotLogo" height="auto" src="./Images/LogoMakr-5OZUCD.png" width="100px"
+						/></a>
+					</div>
+
+					<h2>On the Go?</h2>
+
+					<p>
+						Don't forget all of our products are covered by a simple no hassel warranty. Don't forget to
+						checkout out our Warranty.
+					</p>
+					<!-- Top RobotLogo. This div is controlled by the RobotLogo Class. The logo is also a link to the warranty page" -->
+					<a class="links-override-important" href="/Desktop%20Computer.html">Warranty</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="product-background-template">
+			<h2>Inspiron 15-5565</h2>
+			<img alt="Inspiron 15 5000" class="image-template" src="./Images/DellInspiron155565.jpg" />
+
+			<h3>Features</h3>
+
+			<p>
+				AMD FX-Series FX-9800P (2.7 GHz) 16 GB Memory 1 TB HDD AMD Radeon R8 M445DX Touchscreen 1920 x 1080
+				Windows 10 Home 64-Bit Tray load DVD Drive (Reads and Writes to DVD/CD)
+			</p>
+			<!-- The following internal class will remove the PDF on mobile devices -->
+			<div class="mobileHide">
+				<<embed class="hideOnMobile" height="1100px" src="./PDF/Inspiron%2015-5565.pdf" width="100%" />
+			</div>
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.dell.com/en-ca/shop/dell-laptops/inspiron-15-5000/spd/inspiron-15-5565-laptop"
+				>Dell Inspiron 15-5565</a
+			>
+			<!-- <p><button>Add to Cart</button></p> -->
+			<p class="price">$200</p>
+
+			<button onclick="addToCartClick(5)" class="cart_button" type="button">ADD TO CART</button>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>Inspiron 7405 2-in-1 Laptop</h2>
+			<img alt="Dell 7405 2-in-1" class="image-template" src="./Images/Inspiron74052in1.jpeg" />
+
+			<h3>Features</h3>
+			<p>
+				Processor Model AMD Ryzen 5 4500U AMD Radeon Graphics 14" FHD 1920x1080 FHD Touch Display Intel Wi-Fi 6
+				AX200 Operating system Windows 10
+			</p>
+			<!-- The following internal class will remove the PDF on mobile devices -->
+			<div class="mobileHide">
+				<<embed
+					class="hideOnMobile"
+					height="1100px"
+					src="./PDF/inspiron-14-7405-2-in-1-laptop_users-guide_en-us.pdf"
+					width="100%"
+				/>
+			</div>
+
+			<p class="price">$200</p>
+			<button onclick="addToCartClick(12)" class="cart_button" type="button">ADD TO CART</button>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.dell.com/support/home/en-us/product-support/product/inspiron-14-7405-2-in-1-laptop/overview"
+				>Dell Inspiron 7405</a
+			>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>Latitude 7390 Business Laptop</h2>
+			<img alt="Dell 7390 laptop" class="image-template" src="./Images/dell-latitude-13-7390-conv.jpg" />
+
+			<h3>Features</h3>
+
+			<p>
+				Intel 8th Gen Core i7-8650U Processor (Quad Core, 8M Cache, 1.9GHz,15W, vPro) | Thunderbolt 3 8GB
+				2400MHz DDR4 Memory | 128GB Solid State Drive 13.3inch FHD (1920 x 1080) Non-Touch Anti-Glare | Webcam +
+				Mic
+			</p>
+			<!-- The following internal class will remove the PDF on mobile devices -->
+			<div class="mobileHide">
+				<<embed class="hideOnMobile" height="1100px" src="./PDF/7390.pdf" width="100%" />
+			</div>
+			<p class="price">$900</p>
+			<button onclick="addToCartClick(6)" class="cart_button" type="button">ADD TO CART</button>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.dell.com/en-ca/work/shop/laptops-ultrabooks/latitude-7390-business-%20laptop/spd/latitude-13-7390-laptop?gacd=9683522-3015-5761040-266357531-0&dgc=st&gclsrc=ds"
+				>Dell Latitude 7390</a
+			>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="backgroundpic3">
+			<div class="borderbackground centerOnPic">
+				<div class="backgroundWrap">
+					<div>
+						<a href="./warranty.html"
+							><img alt="RobotLogo" height="auto" src="./Images/LogoMakr-5OZUCD.png" width="100px"
+						/></a>
+					</div>
+
+					<h2>Before you go</h2>
+
+					<p>
+						Checkout our gaming rigs. Messer Computer's started out as a custom computer store. You can find
+						more information in our about us section
+					</p>
+					<!-- Top RobotLogo. This div is controlled by the RobotLogo Class. The logo is also a link to the warranty page" -->
+					<a class="links-override-important" href="./aboutUs.html">About Us</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="product-background-template">
+			<h2>HP Pavilion TG01-1109</h2>
+			<img alt="HP Pavilion TG01-1109" class="image-template" src="./Images/HPPavilionTG011109GamingPC.jpg" />
+
+			<h3>Features</h3>
+
+			<p>
+				Intel® Core™ i5-10400F ,2 TB HDD storage; 256 GB SSD storage, 12 GB DDR4-2666 SDRAM (1 x 4 GB, 1 x 8
+				GB), NVIDIA® GeForce® GTX 1650 SUPER™ (4 GB GDDR6 dedicated)
+			</p>
+			<!-- The following internal class will remove the PDF on mobile devices -->
+			<div class="mobileHide">
+				<<embed class="hideOnMobile" height="1100px" src="./PDF/HP%20Pavilion%20TG01-1109.pdf" width="100%" />
+			</div>
+
+			<p class="price">$900</p>
+			<button onclick="addToCartClick(7)" class="cart_button" type="button">ADD TO CART</button>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<h3>Manufacturers website</h3>
+			<a class="links-override-important" href="https://support.hp.com/ca-en/document/c06723599">HP TG01-1109</a>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>HP OMEN 25L</h2>
+			<img alt="HP OMEN 25L" class="image-template" src="./Images/HPOMEN25L.jpg" />
+
+			<h3>Features</h3>
+
+			<p>
+				Powered by the 10th Generation Intel Processor - Intel Core i5-10400F (2.90 GHz) NVIDIA GeForce GTX 1660
+				SUPER 6 GB GDDR6 8 GB DDR4 512 GB PCIe SSD Windows 10 Home 64-bit Virtual Reality Ready
+			</p>
+			<!-- The following internal class will remove the PDF on mobile devices -->
+			<div class="mobileHide">
+				<<embed
+					class="hideOnMobile"
+					height="1100px"
+					src="./PDF/OMEN%20Desktop%20PC%2025L%20GT11-0000i.pdf"
+					width="100%"
+				/>
+			</div>
+
+			<p class="price">$1,400</p>
+			<button onclick="addToCartClick(8)" class="cart_button" type="button">ADD TO CART</button>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<h3>Manufacturers website</h3>
+			<a class="links-override-important" href="https://support.hp.com/ca-en/document/c06986599">HP OMEN 25L</a>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>Lenovo Legion Tower 5i</h2>
+			<img alt="Lenovo Legion Tower 5i" class="image-template" src="./Images/LenovoLegionTower5i.jpg" />
+
+			<h3>Features</h3>
+
+			<p>
+				Powered by the 10th Generation Intel Processor - Intel Core i7-10700F (2.90 GHz) 16 GB DDR4 1 TB HDD +
+				256 GB SSD Windows 10 Home 64-bit NVIDIA GeForce RTX 2060 6 GB GDDR6 Virtual Reality Ready
+			</p>
+			<!-- The following internal class will remove the PDF on mobile devices -->
+			<div class="mobileHide">
+				<<embed
+					class="hideOnMobile"
+					height="1100px"
+					src="./PDF/Lenovo%20Legion%20Tower%205i.pdf"
+					width="100%"
+				/>
+			</div>
+
+			<p class="price">$1,400</p>
+			<button onclick="addToCartClick(11)" class="cart_button" type="button">ADD TO CART</button>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.lenovo.com/ca/en/desktops-and-all-in-ones/legion-desktops/legion-t-series-towers/Lenovo-Legion-T5-28IMB05/p/99LE9500351"
+				>Lenovo Legion Tower 5i</a
+			>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<button class="showHidePDF hideOnMobile" type="button">Show/Hide Specifications sheet</button>
+
+		<p class="footertemplate">
+			Value and Performance<br />
+			12345 Address rd<br />
+			Ottawa, Ontario<br />
+			K0C 1X0<br />
+			Phone: 1+ (613)-123-4567<br />
+			Email: MesserComputers@gmail.com
+		</p>
+	</body>
+</html>

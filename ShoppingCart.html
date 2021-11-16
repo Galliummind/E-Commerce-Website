@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="This website sells refurbished computers" name="description">
+    <!-- Credit for responsive web design goes to https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Messer Computers</title>
+    <link href="./cssFiles/ss1_main_class_selectors.css" rel="stylesheet">
+    <link href="./cssFiles/simpleshoppingtemplate.css" rel="stylesheet">
+    <link href="./cssFiles/parallax-effect.css" rel="stylesheet">
+    <!-- Add open source icon library learned about this from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"><!-- All import class selectors for social media buttons  -->
+    <link href="./cssFiles/social-media-buttons.css" rel="stylesheet">
+    <link href="./cssFiles/shoppingCart.css" rel="stylesheet">
+    <!-- Import Font Awesome import -->
+<script src="https://kit.fontawesome.com/dbedc92bd4.js" crossorigin="anonymous"></script>
+<script src="./JavaScriptFiles/cartButton.js"></script>
+
+
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <body class="fontFamily" >
+
+        <div class="titlePageHeader">
+            <!-- Top left RobotLogo. This div is controlled by the RobotLogo Class. The logo is also a link to the homepage "./index.html" -->
+    
+    
+            <div class="robot-logo">
+                <a href="./index.html"><img alt="RobotLogo" height="auto" src=
+                "./Images/LogoMakr-5OZUCD.png" width="100px"></a>
+            </div>
+    
+    
+            <h2 class="messercomputerheader">Messer Computers</h2>
+        <!-- Add font awesome icons -->
+        <a class="fa fa-facebook" href="https://www.facebook.com/"></a>
+         <a class="fa fa-twitter" href="https://twitter.com/"></a> 
+         <a class="fa fa-youtube" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a> 
+         <a class="fa fa-instagram" href="https://www.instagram.com/"></a> 
+         <a class="fa fa-reddit" href="https://www.reddit.com/"></a>
+        <a class="fa fa-cart_Icon fa-cart-plus" href="./shoppingCart.html"></a>
+        </div>
+        <!-- Menu Header -->
+    
+    
+            <div class="menu">
+                <div class="listItem">
+                    <ul class="main_menu_unordered_list">
+                        <li>
+                            <!-- Notice the currentLink shows which webpage the user is currently using -->
+                            <a class=" link-template" href="./index.html">Home Page</a>
+                        </li>
+    
+    
+                        <li>
+                            <a class="link-template" href="./shop.html">Shop</a>
+                        </li>
+    
+    
+                        <li>
+                            <a class="link-template" href="./simpleshopping.html">Simple Shopping</a>
+                        </li>
+    
+    
+                        <li>
+                            <a class="link-template" href="./warranty.html">Warranty / Customer
+                            Service</a>
+                        </li>
+    
+    
+                        <li>
+                            <a class="link-template" href="./aboutUs.html">About Us</a>
+                        </li>
+                       
+                        <!-- NOTE CURRENT LINK CLASS -->
+                        <li>
+                            <a class="link-template currentLink" href="./ShoppingCart.html">Shopping Cart</a>
+                        </li>
+
+                    </ul>
+            </div>
+        </div>
+
+        <div class="backgroundpic2">
+        <h1>Shopping Cart</h1>
+    
+    <div class="shoppingCartTable product-background-template">
+        <table id="cartTable">
+        <tr class="hideOnMobile">
+            <!-- Image goes under the first table -->
+            <th class="hideOnMobile"></th>
+            <th class="hideOnMobile">Product</th>
+            <th class="hideOnMobile">Computer Type</th>
+            <th class="hideOnMobile">Total Price</th>
+            <th class="hideOnMobile">Quantity</th>
+            <th class="hideOnMobile"></th>
+            <!-- add/remove buttons added to the last header. -->
+        </tr>
+        </table>
+    </div>
+    <button type="button" class="buttonPurchase" onclick="PurchaseButton()">Purchase items!</button>
+    <button type="button" class="buttonRemove" onclick="clearCartButton()">Clear items!</button>
+
+<body onload="fillShoppingCartTableIf()"></body>
+
+</div>
+</body>
+</html>

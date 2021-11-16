@@ -1,0 +1,52 @@
+/* This stylesheet will be controlling the tables. At the moment The only tables being used are in shop.html. But I want o make sure all tables fit. */
+/* Second edit. This section currently is not being used, but I want to keep the stylesheet and it's content. */
+
+table {
+	/*Physical Attributes*/
+	table-layout: fixed;
+	width: 99%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	border-spacing: 0;
+	border: 1px solid #ddd;
+}
+
+.tableTemplate {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 2px;
+}
+
+th,
+td,
+tr {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.76);
+}
+
+/* Table row nth-child selector will select the element of a particular type. The child part is because we are selecting the child element of a parent.
+Note: n can be letter, number, or description. It is commonly used to color code tables.
+https://www.w3schools.com/cssref/sel_nth-child.asp  */
+
+tr:nth-child(odd) {
+	background-color: rgba(201, 218, 241);
+}
+
+.shoppingTables {
+	/*Physical Attributes*/
+	width: 100%;
+}
+
+/* This class selector will be used for the warranty section to allow people to message the company with any issues.
+I have used an override rule that will add importance to a property/value than normal. I understand this can lead to issues 
+I forget the !important statement is active.*/
+.label_format {
+	display: inline-block;
+	width: 100%;
+	text-align: left !important;
+	padding-top: 10px;
+	padding-left: 10px;
+}

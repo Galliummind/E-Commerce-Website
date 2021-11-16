@@ -1,0 +1,613 @@
+<!-- Note: There is a function (Add to cart) that has been commented out. Because it would require a lot of additional time to properly add this feature, I have decided
+to leave it out of the code for now. It does work as a button, but an item isn't added to any type of cart yet. I really just wanted to try the feature. -->
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="This website sells refurbished computers" name="description" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+		<title>Shop by Needs</title>
+		<link href="./cssFiles/ss1_main_class_selectors.css" rel="stylesheet" />
+		<link href="./cssFiles/parallax-effect.css" rel="stylesheet" />
+		<link href="./cssFiles/simpleshoppingtemplate.css" rel="stylesheet" />
+		<link href="./cssFiles/shoppingCart.css" rel="stylesheet" />
+		<script src="./JavaScriptFiles/cartButton.js"></script>
+		<!-- Add open source icon library learned about this from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+		<!-- All import class selectors for social media buttons  -->
+		<link href="./cssFiles/social-media-buttons.css" rel="stylesheet" />
+		<!-- Import Font Awesome import -->
+		<script src="https://kit.fontawesome.com/dbedc92bd4.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body class="fontFamily">
+		<div class="titlePageHeader">
+			<!-- Top left RobotLogo. This div is controlled by the RobotLogo Class. The logo is also a link to the homepage "./index.html" -->
+
+			<div class="robot-logo">
+				<a href="./index.html"
+					><img alt="RobotLogo" height="auto" src="./Images/LogoMakr-5OZUCD.png" width="100px"
+				/></a>
+			</div>
+
+			<h2 class="messercomputerheader">Messer Computers</h2>
+			<!-- Add font awesome icons -->
+			<a class="fa fa-facebook" href="https://www.facebook.com/"></a>
+			<a class="fa fa-twitter" href="https://twitter.com/"></a>
+			<a class="fa fa-youtube" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
+			<a class="fa fa-instagram" href="https://www.instagram.com/"></a>
+			<a class="fa fa-reddit" href="https://www.reddit.com/"></a>
+			<a class="fa fa-cart_Icon fa-cart-plus" href="./shoppingCart.html"></a>
+		</div>
+		<!-- Menu Header -->
+
+		<div class="menu">
+			<div class="listItem">
+				<ul class="main_menu_unordered_list">
+					<li>
+						<a class="link-template" href="./index.html">Home Page</a>
+					</li>
+
+					<li>
+						<a class="link-template" href="./shop.html">Shop</a>
+					</li>
+
+					<!-- NOTE CURRENT LINK CLASS -->
+					<li>
+						<a class="link-template currentLink" href="./simpleshopping.html">Simple Shopping</a>
+					</li>
+
+					<li>
+						<a class="link-template" href="./warranty.html">Warranty / Customer Service</a>
+					</li>
+
+					<li>
+						<a class="link-template" href="./aboutUs.html">About Us</a>
+					</li>
+
+					<li>
+						<a class="link-template" href="./ShoppingCart.html">Shopping Cart</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="backgroundpic2">
+			<div class="borderbackground centerOnPic">
+				<div class="backgroundWrap">
+					<div>
+						<a href="./shop.html"
+							><img alt="RobotLogo" height="auto" src="./Images/LogoMakr-5OZUCD.png" width="100px"
+						/></a>
+					</div>
+
+					<h2>Tips</h2>
+
+					<p>Need to get to the niddy griddy? Check out our specifications page</p>
+
+					<p>To purchase contact us today!</p>
+
+					<p>A purchase of 3 or more units qualifies for 10% discount.</p>
+					<a class="links-override-important" href="./shop.html">Specifications</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- This is a template that will be used to fill in new product. DO NOT REMOVE.
+                Instructions: CTRL+C > CTRL+V in desired location. 
+                REMOVE COMMENTS BY PRESSING deleting <==-->
+		<!--
+                
+                            
+                <div class ="product-background-template">                 
+                    
+                    <h2>Header</h2>
+                     <img  class="image-template" alt="Dell Optiplex 3020" src="./Images/Dell Optiplex 3020.jpg" >
+                    <h3>Features</h3>
+            
+                    <p class="price">$200</p>
+            
+                    <h3>Manufacturers website</h3>
+                    <a class="links-override-important" href="https://www.dell.com/en-ca/shop/desktops/xps-desktop/spd/xps-8940-desktop">Dell XPS 8940</a>
+            
+
+                    <p>Please note we take information directly from the manufacturer's website</p>
+                </div>
+                </div>
+            
+            -->
+
+		<div class="product-background-template">
+			<h2>Dell Optiplex 7020 Desktop Computer</h2>
+			<img alt="Dell Optiplex 7020" class="image-template" src="./Images/Dell%20Optiplex%207020.jpg" />
+
+			<h3>Features</h3>
+
+			<div>
+				<p>
+					Features Business performance you can count on. Power through your everyday tasks with up to 4th
+					Generation Intel® Core™ i7 processors and the Intel Q87 chipset, as well as the latest discrete
+					graphics.
+				</p>
+
+				<p>
+					What you need, when you need it: Quickly boot the files and applications you use the most with Intel
+					Smart Response Technology.
+				</p>
+
+				<p>
+					Available in two sizes: Pick the right design for your workplace: mini tower or small form factor
+					desktop.
+				</p>
+
+				<p>
+					Built-in management features: Simplify and automate lifecycle management of your OptiPlex fleet with
+					best-in-class integration into Microsoft System Center and Dell KACE appliances — and save valuable
+					time and resources.
+				</p>
+
+				<p>
+					Easy to service: The OptiPlex 7020 has a tool-less chassis design to make it quick and easy to
+					perform routine maintenance, saving you some valuable time and resources.
+				</p>
+
+				<p>
+					Durability: The Dell OptiPlex 7020 is made with durable materials that measure up against real-world
+					conditions. It has undergone Dell Highly Accelerated Life Cycle Testing (H.A.L.T.) and has withstood
+					our engineers’ tolerance limits for heat, cold, vibration, shocks and drops.
+				</p>
+
+				<p>Save energy: The Dell OptiPlex 7020 complies with Energy Star 6.0 and EPEAT Gold energy ratings.</p>
+
+				<h3>Manufacturers website</h3>
+				<a
+					class="links-override-important"
+					href="https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7020-desktop/spd/optiplex-7020-desktop"
+					>Dell 7020</a
+				>
+				<p class="price">$200</p>
+				<button onclick="addToCartClick(1)" class="cart_button" type="button">ADD TO CART</button>
+				<p class="disclaimer-please-note">
+					Please note we take information directly from the manufacturer's website
+				</p>
+			</div>
+		</div>
+
+		<div class="product-background-template">
+			<h2>Dell Optiplex 3020 Desktop Computer</h2>
+			<img alt="Dell Optiplex 3020" class="image-template" src="./Images/Dell%20Optiplex%203020.jpg" />
+
+			<h3>Features</h3>
+
+			<p>
+				Essential performance and best-in-class security, now offered in Dell’s smallest and most versatile form
+				factor, the Dell OptiPlex 3020 Micro. Available with up to Intel® Core™ i5 processors, Intel® HD
+				graphics, and dual monitor capabilities, OptiPlex 3020 enables increased power and productivity.
+				Additionally, the Micro form factor is compatible with five optional mounting solutions, allowing you to
+				keep your desktop off the desk, off the floor and out of the way.
+			</p>
+
+			<p>Power through challenging jobs with up to 4th Gen Intel® Core™ i5 processors and Windows 10 Pro OS.</p>
+
+			<p>Easily run multiple applications simultaneously.</p>
+
+			<p>Boost performance and support dual monitors with integrated Intel® Graphics (HD4600).</p>
+
+			<p>Boot up quickly with an optional high-performance solid-state hybrid drive (SSHD).</p>
+
+			<p class="price">$300</p>
+
+			<button onclick="addToCartClick(2)" class="cart_button" type="button">ADD TO CART</button>
+
+			<h3>Manufacturers website</h3>
+			<a class="links-override-important" href="https://www.dell.com/lt/business/p/optiplex-3020-desktop/pd"
+				>Dell 3020</a
+			>
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>DELL 9020 Desktop Computer</h2>
+			<img alt="Dell 9020 Pic" class="image-template" src="./Images/Dell%20Optiplex%209020.jpg" />
+
+			<h3>Features</h3>
+
+			<p>
+				The Dell 9020 is the step-up from the Dell 3020. With more processing power, this computer will breeze
+				through your workload with Dell's most powerful Optiplex computer. This computer would be great for
+				anyone looking for a higher end desktop capable of multi-tasking and will be able to handle most apps
+				without slowing. Plenty of space for storage it's no wonder that the Dell Optiplex 9020 is one of Dell's
+				most popular computers.
+			</p>
+
+			<p class="price">$500</p>
+
+			<button onclick="addToCartClick(3)" class="cart_button" type="button">ADD TO CART</button>
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.dell.com/en-us/work/shop/cty/pdp/spd/optiplex-9020-desktop?sc_err=notincat"
+				>Dell 9020</a
+			>
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>DELL XPS 8940 Desktop Computer</h2>
+			<img alt="Dell XPS 8940" class="image-template" src="./Images/DellXPS8940.jpg" />
+
+			<h3>Features</h3>
+
+			<p>
+				The XPS Desktop delivers outstanding performance with the power of up to 11th Gen Intel® Core™ i9
+				processors featuring 10 cores and 20 threads. Now you can blaze through system-intensive applications
+				like video editing, HD video playback, gaming, and VR capable graphics options from NVIDIA™ or AMD.
+			</p>
+
+			<p>
+				Power for everything you do: Stay in the flow with up to 11th Gen Intel® Core™ processor-powered XPS
+				desktop that handles your creative projects with ease, like editing photos and videos, so they're ready
+				to share in a flash. Immerse yourself in your favorite show, the latest popular game, or a new creative
+				project – and never think twice about your PC's ability to keep up. Designed with you in mind, 11th Gen
+				Intel® Core™ desktop processors give you the performance you've always wanted, for everything you do.
+			</p>
+
+			<p>
+				Up your creative game: The GeForce® GTX 1660 Ti is built with the breakthrough graphics performance of
+				the award-winning NVIDIA Turing™ architecture.
+			</p>
+
+			<p>
+				Finish important tasks faster: Watch all your advanced applications perform at blazing speed with
+				features including memory of up to 64GB DDR4 (16GB x4) at 2933MHz.
+			</p>
+
+			<p>
+				Killer™ Wireless: With advanced Wi-Fi 6 technology and theoretical throughput speeds of up to 2.4 Gbps,
+				the Killer AX1650i is nearly 3 times as fast as the previous generation of 80MHz 2x2 AC products. It
+				prioritizes streaming video, communication, and game traffic in your system for fast, smooth online
+				experiences.
+			</p>
+
+			<p class="price">$900</p>
+
+			<button onclick="addToCartClick(4)" class="cart_button" type="button">ADD TO CART</button>
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.dell.com/en-ca/shop/desktops/xps-desktop/spd/xps-8940-desktop"
+				>Dell XPS 8940</a
+			>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>Dell Precision 3630 Tower Desktop</h2>
+			<img
+				alt="Dell Precision 3630"
+				class="image-template"
+				src="./Images/Dell%20Precision%203630%20Tower%20Desktop.jpg"
+			/>
+
+			<h3>Features</h3>
+
+			<p>
+				Get ultimate power without sacrificing your budget on the affordable Dell Precision 3000 Series
+				workstations. Elevate your ideas with professional performance, compact industrial designs and Dell’s
+				Reliable Memory Technology Pro.
+			</p>
+
+			<p>
+				Blaze past limits: Power through the most intensive tasks thanks to the latest 9th generation Intel®
+				Core™ and Xeon® processors and faster memory speeds of up to 2666MHz. Expandable and flexible: Scalable
+				storage featuring SATA, SAS and PCIe NVMe SSDs can be configured for up to 28TB delivering top
+				performance for complex projects. Plus, Intel® Optane™ Memory massively boosts your system’s
+				responsiveness while keeping high capacity storage costs to a minimum.
+			</p>
+
+			<p>
+				Prepare yourself for impressive VR in the surprisingly affordable Precision 3630 Tower. Next generation
+				AMD Radeon™ Pro and NVIDIA® Quadro professional graphics with up to 265W of graphics support handles VR
+				content creation with workstation-class performance you can count on.
+			</p>
+
+			<p class="price">$3,000</p>
+
+			<button onclick="addToCartClick(10)" class="cart_button" type="button">ADD TO CART</button>
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.dell.com/en-ca/work/shop/dell-desktops-workstations/precision-3630-tower/spd/precision-3630-workstation"
+				>Dell Precision 3630</a
+			>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+		<!-- This class backgroundpic"x" will be used to make the parralax effect. -->
+
+		<div class="backgroundpic1">
+			<div class="borderbackground centerOnPic">
+				<div class="backgroundWrap">
+					<div>
+						<a href="./warranty.html"
+							><img alt="RobotLogo" height="auto" src="./Images/LogoMakr-5OZUCD.png" width="100px"
+						/></a>
+					</div>
+
+					<h2>On the Go?</h2>
+
+					<p>
+						Don't forget all of our products are covered by a simple no hassel warranty. Don't forget to
+						checkout out our Warranty.
+					</p>
+					<!-- Top RobotLogo. This div is controlled by the RobotLogo Class. The logo is also a link to the warranty page" -->
+					<a class="links-override-important" href="/Desktop%20Computer.html">Warranty</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="product-background-template">
+			<h2>Inspiron 15-5565</h2>
+			<img alt="Inspiron 15 5000" class="image-template" src="./Images/DellInspiron155565.jpg" />
+
+			<h3>Features</h3>
+
+			<p>Created to complement you.</p>
+
+			<p>
+				Grab and go: Your Inspiron is crafted to be portable, so you can stay productive and keep in touch
+				wherever you are. It’s thin—only 23.3mm—and has a light, easy-open design.
+			</p>
+
+			<p>
+				Stylishly crafted: Add beauty to your desk the moment you open your laptop, showing off the stylish,
+				brushed hairline palm rest. Whatever view suits you: Upgrade to the optional Full HD display and enjoy
+				beautiful views on a sizeable 15-inch screen, perfect for projects or streaming. And opt for a touch
+				screen and easily manipulate app and objects directly on screen.
+			</p>
+
+			<p>
+				Picture it: Your Inspiron comes with a built-in infrared camera when you choose the Full HD touch
+				display. It pairs with Windows Hello for easy login without a password, for added security and
+				convenience.
+			</p>
+
+			<p>
+				As powerful as you need it to be: With available 4GB GDDR5 discrete graphics and the latest i5-1135G7
+				processors, you can enjoy quick, responsive performance that keeps your music and videos playing
+				smoothly while your other programs run in the background.
+			</p>
+
+			<p class="price">$200</p>
+
+			<button onclick="addToCartClick(5)" class="cart_button" type="button">ADD TO CART</button>
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.dell.com/en-ca/shop/dell-laptops/inspiron-15-5000/spd/inspiron-15-5565-laptop"
+				>Dell Inspiron 15-5565</a
+			>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>Inspiron 7405 2-in-1</h2>
+			<img alt="Dell 7405 2-in-1" class="image-template" src="./Images/Inspiron74052in1.jpeg" />
+
+			<h3>Features</h3>
+
+			<p>
+				"Power through: With an ultra-responsive i7-1165G7 processor for productivity, gaming, and content
+				creation on-the-go, Intel will give you the performance you need to do more, from anywhere – faster than
+				ever before with Inspiron 14 7405. More screen: Take in every detail on a 14″ wide-viewing angle screen
+				which provides more screen space in a compact package thanks to a narrow border on three sides. Give
+				yourself a lift: The lift hinge design picks up the rear end of the 2-in-1 to ensure that you have a
+				clearer view of your screen when in use."
+			</p>
+
+			<p>
+				Sources:
+				<a
+					class="links-override-important"
+					href="https://mustconsider.com/2021/04/04/inspiron-14-7405-2-in-1-ultraportable-laptop/"
+				>
+					MustConsider Inspiron 7405 Review</a
+				>
+			</p>
+
+			<p class="price">$200</p>
+
+			<button onclick="addToCartClick(12)" class="cart_button" type="button">ADD TO CART</button>
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.dell.com/support/home/en-us/product-support/product/inspiron-14-7405-2-in-1-laptop/overview"
+				>Dell Inspiron 7405</a
+			>
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>Latitude 7390 Business Laptop</h2>
+			<img alt="Dell 7390 laptop" class="image-template" src="./Images/dell-latitude-13-7390-conv.jpg" />
+
+			<h3>Features</h3>
+
+			<p>
+				Latitude laptops and 2-in-1s enable all day productivity with the most secure and manageable features
+				all in a beautiful design you will be proud to carry. No matter where work takes you—whether you are on
+				the go, at the desk or working from the café, we have the right solutions so you can office everywhere.
+			</p>
+
+			<p>
+				Outstanding views: The gorgeous 13" Full HD display is anti-glare and features a narrow
+				border–intelligently engineered to fit a 12" frame for lightweight mobility and a remarkable viewing
+				experience.
+			</p>
+
+			<p>
+				High-caliber construction: Built with high-end materials like Magnesium Alloy, the Latitude 7390
+				combines premium design with best-in-class durability.
+			</p>
+
+			<p class="price">$900</p>
+
+			<button onclick="addToCartClick(6)" class="cart_button" type="button">ADD TO CART</button>
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.dell.com/en-ca/work/shop/laptops-ultrabooks/latitude-7390-business-%20laptop/spd/latitude-13-7390-laptop?gacd=9683522-3015-5761040-266357531-0&dgc=st&gclsrc=ds"
+				>Dell Latitude 7390</a
+			>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="backgroundpic3">
+			<div class="borderbackground centerOnPic">
+				<div class="backgroundWrap">
+					<div>
+						<a href="./warranty.html"
+							><img alt="RobotLogo" height="auto" src="./Images/LogoMakr-5OZUCD.png" width="100px"
+						/></a>
+					</div>
+
+					<h2>Before you go</h2>
+
+					<p>
+						Checkout our gaming rigs. Messer Computer's started out as a custom computer store. You can find
+						more information in our about us section
+					</p>
+					<!-- Top RobotLogo. This div is controlled by the RobotLogo Class. The logo is also a link to the warranty page" -->
+					<a class="links-override-important" href="./aboutUs.html">About Us</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="product-background-template">
+			<h2>HP Pavilion TG01-1109</h2>
+			<img alt="HP Pavilion TG01-1109" class="image-template" src="./Images/HPPavilionTG011109GamingPC.jpg" />
+
+			<h3>Features</h3>
+			<!-- paragraph taken directly from bestbuy below https://www.bestbuy.ca/en-ca/product/hp-pavilion-gaming-pc-intel-core-i5-10400f-1tb-hdd-256gb-ssd-12gb-ram-gtx-1650-super-english/14961736 -->
+
+			<p>
+				Play demanding games with no fuss or lag with this HP Pavilion gaming PC. It's equipped with a 10th
+				Generation Intel Core i5-10400F processor, 12GB of DDR4-2666 SDRAM memory and an NVIDIA GeForce GTX 1650
+				Super graphics card to deliver blazing-fast performance while gaming or multitasking with your favourite
+				entertainment applictions.
+			</p>
+
+			<p class="price">$900</p>
+
+			<button onclick="addToCartClick(7)" class="cart_button" type="button">ADD TO CART</button>
+
+			<h3>Manufacturers website</h3>
+			<a class="links-override-important" href="https://support.hp.com/ca-en/document/c06723599">HP TG01-1109</a>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>HP OMEN 25L</h2>
+			<img alt="HP OMEN 25L" class="image-template" src="./Images/HPOMEN25L.jpg" />
+
+			<h3>Features</h3>
+			<!-- paragraph taken directly from bestbuy below https://www.bestbuy.ca/en-ca/product/hp-omen-25l-gaming-pc-amd-ryzen-7-3700x-512gb-ssd-16gb-ram-geforce-rtx-2070-super-windows-10/15201744 -->
+
+			<p>
+				Redefine your gaming experience with the HP OMEN 25L gaming PC. Configured with an octa-core AMD Ryzen 7
+				3700X processor and 16GB of HyperX XMP SDRAM, this computer delivers exceptional performance in gaming,
+				video editing, and other demanding tasks. Its NVIDIA GeForce RTX 2070 SUPERGPU with 8GB of video memory
+				renders any game with high frame rates and impressive detail.
+			</p>
+
+			<p class="price">$1,400</p>
+
+			<button onclick="addToCartClick(8)" class="cart_button" type="button">ADD TO CART</button>
+
+			<h3>Manufacturers website</h3>
+			<a class="links-override-important" href="https://support.hp.com/ca-en/document/c06986599">HP OMEN 25L</a>
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<div class="product-background-template">
+			<h2>Lenovo Legion Tower 5i</h2>
+			<img alt="Lenovo Legion Tower 5i" class="image-template" src="./Images/LenovoLegionTower5i.jpg" />
+
+			<h3>Features</h3>
+			<!-- paragraph taken directly from Lenovo below https://www.lenovo.com/ca/en/desktops-and-all-in-ones/legion-desktops/legion-t-series-towers/Lenovo-Legion-T5-28IMB05/p/99LE9500351  -->
+
+			<p>
+				The Legion Tower 5i gaming desktop unleashes performance via 10th Generation Intel® Core™ Tower
+				processors for ultimate in-game domination. Push your gaming PC to the top of the rankings with 8 cores,
+				16 threads, and up to 4.8GHz Turbo Boost. You can also game, stream, and record at peak performance via
+				Intel® WiFi 6 for lag-free gaming.
+			</p>
+
+			<p class="price">$1,400</p>
+			<button onclick="addToCartClick(11)" class="cart_button" type="button">ADD TO CART</button>
+
+			<h3>Manufacturers website</h3>
+			<a
+				class="links-override-important"
+				href="https://www.lenovo.com/ca/en/desktops-and-all-in-ones/legion-desktops/legion-t-series-towers/Lenovo-Legion-T5-28IMB05/p/99LE9500351"
+				>Lenovo Legion Tower 5i</a
+			>
+			<!-- <p><button>Add to Cart</button></p> -->
+
+			<p class="disclaimer-please-note">
+				Please note we take information directly from the manufacturer's website
+			</p>
+		</div>
+
+		<p class="footertemplate">
+			Value and Performance<br />
+			12345 Address rd<br />
+			Ottawa, Ontario<br />
+			K0C 1X0<br />
+			Phone: 1+ (613)-123-4567<br />
+			Email: MesserComputers@gmail.com
+		</p>
+	</body>
+</html>

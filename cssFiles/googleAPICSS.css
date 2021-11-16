@@ -1,0 +1,12 @@
+/* This map id is simply being used for the google maps on the aboutus.html page.*/
+#map {
+	height: 70%;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-spacing: 0;
+	border: 1px solid #ddd;
+}

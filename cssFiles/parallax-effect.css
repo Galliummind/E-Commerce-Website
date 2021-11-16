@@ -1,0 +1,263 @@
+.captionPosition {
+	/* Text Settings */
+	position: absolute;
+	width: 100%;
+	top: 25%;
+	left: 50%;
+	/* translate repositions an element based on horizontal and/or vertical directions. This will help me keep my images fixed in one location. 
+    Credit goes to https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate() */
+	transform: translate(-50%, -50%);
+	color: rgb(73, 73, 73);
+	/* Font Setting*/
+	font-size: 200%;
+	/* Background Settings */
+	background-color: rgb(255, 255, 255);
+	width: fit-content;
+	/* Border Settings  */
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* I can take very little credit for the parallax strategy. I pretty much took the entire format of CSS website and added it to my own. I did however experiment
+with the various parameters to understand how they work. Originally I had created a similar Parallax effect, but only using one with a fixed location.*/
+
+.backgroundpic1,
+.backgroundpic2,
+.backgroundpic3,
+.backgroundpic4,
+.backgroundpic5,
+.backgroundpic6,
+.backgroundpic7,
+.backgroundpic8,
+.backgroundpic9,
+.backgroundpic101,
+.backgroundpic102,
+.backgroundpic103,
+.backgroundpic104,
+.backgroundpic105,
+.backgroundpic106,
+.backgroundpic107,
+.backgroundpic108 {
+	position: relative;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.9;
+}
+.backgroundpic1 {
+	/* The Image for background */
+	/* Credit: https://www.pexels.com/photo/semi-opened-laptop-computer-turned-on-on-table-2047905/
+        PHOTO INFORMATION
+        Semi-opened Laptop Computer Turned-on on Table
+        Uploaded at March 22, 2019
+        Lens	50.0mm ƒ/5.6 ISO 8000
+        Size	7.55 MB
+        Resolution	3648px x 5472px
+        Camera	Canon EOS 6D
+        Software	Adobe Photoshop Lightroom 5.7.1 (Macintosh)
+        Taken at	August 14, 2018 10:36 pm
+        Aspect Ratio	2:3
+        */
+	background-image: url('../Images/Background_Picture.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic2 {
+	/* The Image for background */
+	/* Credit: https://www.pexels.com/photo/gray-wooden-computer-cubicles-inside-room-267507/ for picture credits.
+        PHOTO INFORMATION
+        Gray Wooden Computer Cubicles Inside Room
+        Uploaded at December 22, 2016
+        Size	432 KB
+        Resolution	1920px x 1080px
+        Aspect Ratio	16:9
+        Reference: PixaBay
+        */
+	background-image: url('../Images/Officebackgroundpicture.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic3 {
+	/* The Image for background */
+	/* Credit: https://www.pexels.com/photo/semi-opened-laptop-computer-turned-on-on-table-2047905/ for learning how
+    to add a background image and have it centered. */
+	background-image: url('../Images/GamingComputerBackground3.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic4 {
+	/* The Image for background */
+	/* Credit: https://www.pexels.com/photo/semi-opened-laptop-computer-turned-on-on-table-2047905/ for learning how
+    to add a background image and have it centered. */
+	background-image: url('../Images/WhiteAbstractBackground4.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic5 {
+	/* The Image for background */
+	/* Credit: https://www.pexels.com/photo/semi-opened-laptop-computer-turned-on-on-table-2047905/ for learning how
+to add a background image and have it centered. */
+	background-image: url('../Images/Background_Picture.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic6 {
+	/* The Image for background */
+	/* Credit: https://www.pexels.com/photo/semi-opened-laptop-computer-turned-on-on-table-2047905/ for learning how
+to add a background image and have it centered. */
+	background-image: url('../Images/free-polygon-backgrounds/PolygonCrystal.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic101 {
+	/* The Image for background */
+	/* Credit: https://www.graphicsfuel.com/2014/09/10-free-polygon-backgrounds/
+    PHOTO INFORMATION
+    Author: GraphicsFuel
+    Format: JPEG
+    Dimensions: 4000×3000 px
+    Created: SEP 17, 2014
+    Aspect Ratio ??
+    */
+	background-image: url('../Images/free-polygon-backgrounds/PolygonCrystal.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic102 {
+	/* The Image for background */
+	/* Credit: https://www.graphicsfuel.com/2014/09/10-free-polygon-backgrounds/
+    PHOTO INFORMATION
+    Author: GraphicsFuel
+    Format: JPEG
+    Dimensions: 4000×3000 px
+    Created: SEP 17, 2014
+    Aspect Ratio ??
+    */
+	background-image: url('../Images/free-polygon-backgrounds/PolygonGrey.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic103 {
+	/* The Image for background */
+	/* Credit: https://www.graphicsfuel.com/2014/09/10-free-polygon-backgrounds/
+    PHOTO INFORMATION
+    Author: GraphicsFuel
+    Format: JPEG
+    Dimensions: 4000×3000 px
+    Created: SEP 17, 2014
+    Aspect Ratio ??
+    */
+	background-image: url('../Images/free-polygon-backgrounds/Polygonlight.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic104 {
+	/* The Image for background */
+	/* Credit: https://www.graphicsfuel.com/2014/09/10-free-polygon-backgrounds/
+    PHOTO INFORMATION
+    Author: GraphicsFuel
+    Format: JPEG
+    Dimensions: 4000×3000 px
+    Created: SEP 17, 2014
+    Aspect Ratio ??
+    */
+	background-image: url('../Images/free-polygon-backgrounds/PolygonOJ.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic105 {
+	/* The Image for background */
+	/* Credit: https://www.graphicsfuel.com/2014/09/10-free-polygon-backgrounds/
+    PHOTO INFORMATION
+    Author: GraphicsFuel
+    Format: JPEG
+    Dimensions: 4000×3000 px
+    Created: SEP 17, 2014
+    Aspect Ratio ??
+    */
+	background-image: url('../Images/free-polygon-backgrounds/PolygonPink.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic106 {
+	/* The Image for background */
+	/* Credit: https://www.graphicsfuel.com/2014/09/10-free-polygon-backgrounds/
+    PHOTO INFORMATION
+    Author: GraphicsFuel
+    Format: JPEG
+    Dimensions: 4000×3000 px
+    Created: SEP 17, 2014
+    Aspect Ratio ??
+    */
+	background-image: url('../Images/free-polygon-backgrounds/PolygonPurp.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic107 {
+	/* The Image for background */
+	/* Credit: https://www.graphicsfuel.com/2014/09/10-free-polygon-backgrounds/
+    PHOTO INFORMATION
+    Author: GraphicsFuel
+    Format: JPEG
+    Dimensions: 4000×3000 px
+    Created: SEP 17, 2014
+    Aspect Ratio ??
+    */
+	background-image: url('../Images/free-polygon-backgrounds/PolygonRainbow.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+.backgroundpic108 {
+	/* The Image for background */
+	/* Credit: https://www.graphicsfuel.com/2014/09/10-free-polygon-backgrounds/
+    PHOTO INFORMATION
+    Author: GraphicsFuel
+    Format: JPEG
+    Dimensions: 4000×3000 px
+    Created: SEP 17, 2014
+    Aspect Ratio ??
+    */
+	background-image: url('../Images/free-polygon-backgrounds/PolygonRed.jpg');
+	/* Size of Picture */
+	height: 100%;
+	width: 100%;
+}
+/* This entire section was taken directly (cut and paste from https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm 
+Media queries are used to adapt webpages according to the device or conditions. In this example we will be using a max device width to remove the parallax feature. 
+On a tablet or phone the webpage shows as a classic scrolling background. */
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+	.backgroundpic1,
+	.backgroundpic2,
+	.backgroundpic3,
+	.backgroundpic4,
+	.backgroundpic5,
+	.backgroundpic6,
+	.backgroundpic101,
+	.backgroundpic102,
+	.backgroundpic103,
+	.backgroundpic104,
+	.backgroundpic105,
+	.backgroundpic106,
+	.backgroundpic107,
+	.backgroundpic108 {
+		background-attachment: scroll;
+	}
+}
