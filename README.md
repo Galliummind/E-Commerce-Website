@@ -1,5 +1,5 @@
 ### Hello My name is Louis AKA Galliummind 👋 
-#### I'm a Husband, Father, student, test technician, and aspiring programmer.
+#### I'm looking to learn programming.
 
 - 🔭 I'm currently learning Javascript, NodeJS
 - 👯 I’m looking to collaborate with other content creators
